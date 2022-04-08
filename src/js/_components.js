@@ -1,1 +1,1 @@
-console.log('components');
+import './components/rightside-menu.js';

@@ -1,0 +1,22 @@
+.nav{
+  padding-right: 60px;
+  
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+    margin-left: 35px;
+    &:not(:last-child){
+      margin-right: 45px;
+    }
+  }
+
+  &__link{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138%;
+    color: rgba(54, 56, 56, 0.9033);
+  }
+}

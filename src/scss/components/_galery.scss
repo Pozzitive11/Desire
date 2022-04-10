@@ -1,0 +1,42 @@
+.galery{
+  padding-top: 33px;
+  &__container{
+    padding: 0 18px;
+  }
+
+  &__btns{
+    @include flex-all-center;
+    margin-bottom: 38px;
+  }
+
+  &__btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 200%;
+    color: #8F8D8D;
+    padding: 6px 16px;
+    border: 1px solid;
+    border-color: rgba(69, 70, 71, 0.5);
+    border-radius: 20px;
+
+    &:not(:last-child){
+      margin-right: 29px;
+    }
+  }
+
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 26px 33px;
+  }
+
+  &__item:first-child{
+    grid-column: 2 span;
+    grid-row: 2 span;
+  }
+
+  &__image{
+    max-width: initial;
+  }
+}

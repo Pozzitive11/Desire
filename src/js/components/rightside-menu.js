@@ -1,6 +1,3 @@
-
-
-
 const rightside = document.querySelector('.rightside');
 
 
@@ -15,7 +12,6 @@ if (rightside) {
   rightsideBtnClose.addEventListener('click', () => {
     rightside.classList.add('rightside--close');
   });
-
 }
 
 

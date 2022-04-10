@@ -1,0 +1,16 @@
+.inspiration{
+  padding-top: 84px;
+  padding-bottom: 30px;
+
+  &__title{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 430px;
+    text-align: center;
+  }
+
+  &__list{
+    display: flex;
+    gap: 30px;
+  }
+}

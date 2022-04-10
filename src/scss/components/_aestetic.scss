@@ -1,0 +1,26 @@
+.aestetic{
+  @include bg-cover;
+
+  background-image: url(../img/aestetic-bg.jpg);
+  padding-top: 171px;
+  padding-bottom: 184px;
+
+  &__title{
+    margin: 0;
+    margin-bottom: 22px;
+    font-family: 'Montserrat';
+    max-width: 510px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: var(--color-cape);
+  }
+
+  &__line{
+    margin-bottom: 21px;
+  }
+
+  &__descr{
+    max-width: 540px;
+  }
+}

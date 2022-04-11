@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <picture>
+        <source srcset="img/cover.avif" type="image/avif">
+        <source srcset="img/cover.webp" type="image/webp">
+      </picture>
+      @include('partials/hero-about.html')
+      @include('partials/balance.html')
+      @include('partials/about-video.html')
+      @include('partials/achievements.html')
+      @include('partials/partners.html')
+      @include('partials/about-collection.html')
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

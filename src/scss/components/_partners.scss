@@ -1,0 +1,10 @@
+.partners{
+  padding-top: 14px;
+
+  &__items{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 34px;
+  }
+}

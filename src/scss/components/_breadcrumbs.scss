@@ -1,0 +1,40 @@
+.breadcrumbs {
+  @include flex-v-center;
+
+  position: absolute;
+  top: 12px;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+
+      &::after {
+        content: "/";
+        position: absolute;
+        right: -7px;
+        top: 5px;
+        color: #5a5a5a;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: var(--color-cape);
+    transition: color 0.3s ease-in-out;
+
+    &:not([href]) {
+      color: #5a5a5a;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+

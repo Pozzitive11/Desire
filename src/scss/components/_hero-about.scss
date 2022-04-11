@@ -1,0 +1,17 @@
+.hero-about{
+  position: relative;
+  padding: 159px 0;
+  background-image: url(../img/about-bg.jpg);
+  @include bg-cover;
+
+  &__title{
+    @include flex-all-center;
+
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 133%;
+  }
+
+}

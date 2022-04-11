@@ -23,7 +23,8 @@
   }
 
   &__descr{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    max-width: 476px;
   }
 
   &__mail{
@@ -51,10 +52,10 @@
   }
 
   &__copy{
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 4px;
     height: 110px;
     color: #a1a1a1;
     background-color: var(--color-cape);
@@ -62,10 +63,14 @@
 }
 
 .footer-form{
+  &__label{
+    margin-right: 6px;
+  }
+
   &__input{
-    padding-top: 6px;
-    padding-right: 10px;
-    padding-bottom: 6px;
+    padding-top: 9px;
+    padding-right: 25px;
+    padding-bottom: 10px;
     padding-left: 18px;
     width: 368px;
     border-radius: 21px;
@@ -91,7 +96,7 @@
 
   &__col{
     &:not(:last-child){
-      margin-right: 187px;
+      margin-right: 159px;
     }
   }
 

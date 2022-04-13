@@ -1,0 +1,40 @@
+.contacts-slider{
+  margin-bottom: 144px;
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 19px;
+  }
+
+  &__item{
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .contacts-slider__title {
+        opacity: 1;
+        visibility: visible;
+
+      }
+    }
+  }
+
+  &__title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138%;
+    text-align: center;
+    color: rgba(54, 56, 56, 0.9033);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,5 +1,9 @@
 .aside{
   max-width: 349px;
+
+  @include tablet{
+    max-width: 100%;
+  }
 }
 
 .aside-form {
@@ -49,6 +53,9 @@
     line-height: 169%;
     color: #5A5A5A;
 
+    &:hover{
+      color: #000;
+    }
   }
 }
 
@@ -66,6 +73,10 @@
       font-size: 16px;
       line-height: 169%;
       color: #5A5A5A;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 
@@ -74,6 +85,18 @@
     font-size: 14px;
     line-height: 200%;
     color: #A1A1A1;
+
+    a{
+      color: inherit;
+    }
+
+    &-item{
+      &:hover {
+        color: #000;
+      }
+
+    }
+
   }
 }
 
@@ -107,6 +130,7 @@
     border: 1px solid #454647;
     border-radius: 14px;
   }
+
 }
 
 .aside-social{
@@ -114,5 +138,9 @@
 
   &__item{
     margin-right: 20px;
+  }
+
+  @include tablet{
+    display: none;
   }
 }

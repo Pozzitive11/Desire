@@ -4,15 +4,23 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @include tablet{
+      display: block;
+
+    }
   }
 
   &__content {
     margin-right: 31px;
     max-width: 730px;
+
+    @include tablet{
+      margin: 0 auto;
+    }
   }
 
   &__img {
-    max-width: initial;
     margin-bottom: 23px;
   }
 

@@ -23,6 +23,10 @@
 
   &__title{
     margin: 0;
+
+    &:hover {
+      color: #000;
+    }
   }
 }
 
@@ -30,6 +34,7 @@
   &__item{
     position: relative;
     color: inherit;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-right: 14px;
@@ -44,6 +49,10 @@
         color: inherit;
         background-color: currentColor;
       }
+    }
+
+    &:hover{
+      color: #000;
     }
   }
 }

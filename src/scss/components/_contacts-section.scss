@@ -61,14 +61,19 @@
   display: flex;
   margin-bottom: 21px;
 
+
   &__item{
     margin-right: 49px;
+
+    @include mobile{
+      margin-right: 40px;
+    }
   }
 }
 
 .contacts-form{
   &__label {
-    margin-right: 6px;
+    margin-right: 21px;
   }
 
   &__input {
@@ -76,10 +81,15 @@
     padding-right: 25px;
     padding-bottom: 10px;
     padding-left: 18px;
-    width: 407px;
+    width: 48%;
     border-radius: 20px;
     border: 1px solid #DFDFDF;
     background-color: var(--color-light);
+
+    @include small-tablet{
+      width: 100%;
+      margin-bottom: 14px;
+    }
 
     &--big{
       margin-top: 14px;

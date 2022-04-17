@@ -1,8 +1,9 @@
 .header{
   position: relative;
+  padding-top: 45px;
+  padding-bottom: 41px;
 
   &__container {
-    height: 120px;
     @include flex-all-sb;
   }
 }
@@ -46,11 +47,6 @@
     margin-bottom: 40px;
   }
 
-  &__line{
-    margin: 0 auto;
-    margin-bottom: 17px;
-  }
-
   &__img{
     align-items: center;
     margin-bottom: 50px;
@@ -58,6 +54,20 @@
 
   &__title{
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: var(--color-cape);
+    }
   }
 
   &__descr{

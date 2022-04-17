@@ -3,14 +3,21 @@
   &__inner{
     display: flex;
     justify-content: space-between;
+
+    @include tablet{
+      display: block;
+    }
   }
   &__content{
     margin-right: 31px;
     max-width: 730px;
+
+    @include tablet{
+      margin: 0 auto;
+    }
   }
 
   &__img{
-    max-width: initial;
     margin-bottom: 23px;
   }
 
@@ -50,7 +57,12 @@
       &:not(:last-child) {
         margin-right: 23px;
       }
+
+      @include tablet{
+        margin-bottom: 10px;
+      }
     }
+
   }
 
   &__article{
@@ -79,6 +91,9 @@
     line-height: 200%;
     color: #707070;
     width: 266px;
+    @include tablet {
+      margin-right: 15px;
+    }
   }
 
   &__item-right{
@@ -234,6 +249,11 @@
     border-radius: 20px;
     border: 1px solid #DFDFDF;
     background-color: var(--color-light);
+
+    @include small-tablet{
+      width: 100%;
+      margin-bottom: 10px;
+    }
 
     &--big {
       margin-bottom: 6px;

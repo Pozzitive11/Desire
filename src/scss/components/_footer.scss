@@ -7,11 +7,19 @@
 
   &__inner{
     display: flex;
+
+    @include tablet{
+      flex-wrap: wrap;
+    }
   }
 
   &__content{
-    width: 539px;
+    max-width: 539px;
     margin-right: 99px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
   }
 
   &__title{
@@ -25,6 +33,10 @@
   &__descr{
     margin-bottom: 20px;
     max-width: 476px;
+
+    @include tablet {
+      max-width: 300px;
+    }
   }
 
   &__mail{
@@ -55,6 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-right: 4px;
     height: 110px;
     color: #a1a1a1;
@@ -65,6 +78,11 @@
 .footer-form{
   &__label{
     margin-right: 6px;
+
+    @include tablet{
+      display: inline-block;
+      margin-bottom: 15px;
+    }
   }
 
   &__input{
@@ -77,6 +95,10 @@
     opacity: 0.7;
     border: 1px solid #383636;
     background-color: #dfdfdf;
+
+    @include mobile{
+      width: 100%;
+    }
   }
 
   &__btn{
@@ -88,6 +110,11 @@
     line-height: 28px;
     color: var(--color-light);
     background-color: var(--color-cape);
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      background-color: #100e0e;
+    }
   }
 }
 
@@ -95,8 +122,21 @@
   display: flex;
 
   &__col{
+    width: 129px;
     &:not(:last-child){
-      margin-right: 159px;
+      margin-right: 127px;
+    }
+
+    @include big-desktop{
+      &:not(:last-child) {
+        margin-right: 100px;
+      }
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
   }
 
@@ -187,5 +227,10 @@
     font-size: 14px;
     line-height: 200%;
     color: var(--color-gray44);
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      color: #000;
+    }
   }
 }

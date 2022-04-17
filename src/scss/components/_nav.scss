@@ -1,6 +1,6 @@
 .nav{
   padding-right: 60px;
-  
+
   &__list{
     display: flex;
   }
@@ -13,10 +13,22 @@
   }
 
   &__link{
+    display: inline-block;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     line-height: 138%;
     color: rgba(54, 56, 56, 0.9033);
+    transition: all 0.3s ease-in-out;
+
+    &--current{
+      padding-bottom:2px;
+      border-bottom: 2px solid var(--color-cape);
+      border-radius: 1px;
+    }
+
+    &:hover{
+      color: #000;
+    }
   }
 }
